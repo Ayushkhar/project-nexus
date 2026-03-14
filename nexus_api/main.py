@@ -7,6 +7,16 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
 from fastapi.middleware.cors import CORSMiddleware
 
+
+# -----------------------------
+# Initialize FastAPI
+# -----------------------------
+app = FastAPI(title="Project NEXUS API")
+
+
+# -----------------------------
+# Enable CORS
+# -----------------------------
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -14,11 +24,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# -----------------------------
-# Initialize FastAPI
-# -----------------------------
-app = FastAPI(title="Project NEXUS API")
 
 
 # -----------------------------
