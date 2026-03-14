@@ -5,8 +5,7 @@ export default function Chat() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // Your deployed FastAPI server
-  const API = "http://35.244.55.209:8000";
+  const API = "https://pst-holdem-melissa-madonna.trycloudflare.com";
 
   const messagesEndRef = useRef(null);
 
