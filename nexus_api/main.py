@@ -22,7 +22,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # -----------------------------
 # Model path
 # -----------------------------
-MODEL_PATH = "nexus_lora2"
+MODEL_PATH = "../nexus_lora2"
 
 
 # -----------------------------
